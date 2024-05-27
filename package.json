@@ -1,8 +1,15 @@
 {
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "devDependencies": {
     "sequelize-cli": "^6.6.2"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.19.2",
+    "md5": "^2.3.0",
     "mysql2": "^3.9.8",
     "sequelize": "^6.37.3"
   }
