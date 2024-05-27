@@ -16,7 +16,7 @@ module.exports = {
       genre: {
         type: Sequelize.STRING,
       },
-      Image: {
+      image: {
         type: Sequelize.STRING,
       },
       createdAt: {
