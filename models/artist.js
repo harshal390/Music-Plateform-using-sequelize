@@ -20,6 +20,15 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'artist',
+    hook:{
+      beforeCreate: async (artist, options) => {
+        artist.createdAt = new Date();
+        artist.updatedAt = new Date();
+      },
+      beforeUpdate: async (artist, options) => {
+        artist.updatedAt = new Date();
+      },
+    }
   });
   return artist;
 };

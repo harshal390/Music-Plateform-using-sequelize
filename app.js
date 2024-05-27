@@ -2,6 +2,7 @@ const express = require('express');
 const app = express()
 const port = 3000;
 const userRoute = require('./routes/user.route')
+const artistRoute = require('./routes/artist.route');
 
 //body-parser alternative
 app.use(express.json());
@@ -12,6 +13,7 @@ app.get('/', (req, res) => {
 })
 
 app.use('/user',userRoute);
+app.use('/artist',artistRoute);
 
 
 app.listen(port, () => {
